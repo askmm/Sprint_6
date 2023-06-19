@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class GetKittensWithIntParameterTest {
 
-    public int kittensNumber;
+    private final int kittensNumber;
 
     public GetKittensWithIntParameterTest(Integer kittensNumber) {
         this.kittensNumber = kittensNumber;
@@ -31,6 +31,6 @@ public class GetKittensWithIntParameterTest {
     @Test
     public void getKittensWithIntParametersEqualsItself(){
         Feline feline = new Feline();
-        assertEquals(feline.getKittens(kittensNumber), kittensNumber);
+        assertEquals(kittensNumber, feline.getKittens(kittensNumber));
     }
 }

@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 public class SexIndependentTest {
     @Mock
     Feline feline;
-    public String sex;
+    private final String sex;
 
     @Before
     public void init() {

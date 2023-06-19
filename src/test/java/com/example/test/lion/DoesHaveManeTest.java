@@ -13,8 +13,8 @@ import static junit.framework.TestCase.assertEquals;
 
 @RunWith(Parameterized.class)
 public class DoesHaveManeTest {
-    public String sex;
-    public boolean hasMane;
+    private final String sex;
+    private final boolean hasMane;
     Feline feline = new Feline();
 
     public DoesHaveManeTest(String sex, boolean hasMane){
